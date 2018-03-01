@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#297fb8</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textutama</item>
+        <item name="material_drawer_selected">#297fb8</item>
+        <item name="material_drawer_selected_text">#FFFFFF</item>
+
+    </style>
+        <color name="kuning">#FFEB3B</color>
+        <!--<color name="birumuda">#2196f3</color>-->
+        <color name="birutua">#1976D2</color>
+    <color name="textutama">#000</color>
+</resources>

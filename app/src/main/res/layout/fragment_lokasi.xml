@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+
+    tools:context="com.fun_corp.umamappsv10.Lokasi">
+    <!--android:name="com.google.android.gms.maps.MapFragment"-->
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        card_view:cardCornerRadius="5dp"
+                        card_view:cardElevation="@dimen/cardview_default_elevation"
+                        card_view:cardBackgroundColor="#FFF">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.design.widget.FloatingActionButton
+                                        android:id="@+id/btn_lokasi_anak"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:clickable="true"
+                                        app:fabSize="mini"
+                                        app:srcCompat="@mipmap/ic_directions_car_white_24dp"
+                                        card_view:backgroundTint="@color/colorAccent" />
+
+                                    <android.support.design.widget.FloatingActionButton
+                                        android:id="@+id/btn_refresh"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:clickable="true"
+                                        app:fabSize="mini"
+                                        app:srcCompat="@mipmap/ic_refresh_white_24dp"
+                                        card_view:backgroundTint="@color/colorAccent" />
+
+                                    <android.support.design.widget.FloatingActionButton
+                                        android:id="@+id/btn_lokasi_anda"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_gravity="end"
+                                        android:layout_weight="1"
+                                        android:clickable="true"
+                                        app:fabSize="mini"
+                                        app:srcCompat="@mipmap/ic_gps_fixed_white_24dp"
+                                        card_view:backgroundTint="@color/colorAccent"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--<Button-->
+            <!--android:id="@+id/googlemaps_select_location"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="Select" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

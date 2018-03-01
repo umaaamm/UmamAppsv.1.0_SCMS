@@ -1,0 +1,349 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context="com.fun_corp.umamappsv10.Statistik">-->
+
+<!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+
+<!--<RelativeLayout-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="fill_parent"-->
+<!--android:gravity="center"-->
+<!--&gt;-->
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--<com.github.mikephil.charting.charts.LineChart-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="400dp"-->
+<!--android:id="@+id/lineChart"></com.github.mikephil.charting.charts.LineChart>-->
+
+<!--</LinearLayout>-->
+
+<!--&lt;!&ndash;<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;xmlns:card_view="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/cardlist_suhu"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginBottom="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:foreground="?android:attr/selectableItemBackground"&ndash;&gt;-->
+<!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;card_view:cardBackgroundColor="#EEEEEE"&ndash;&gt;-->
+<!--&lt;!&ndash;card_view:cardCornerRadius="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;card_view:cardElevation="@dimen/cardview_default_elevation">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;android:paddingBottom="5dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;xmlns:card_view="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginBottom="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;android:paddingBottom="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;card_view:cardCornerRadius="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;card_view:cardElevation="@dimen/cardview_default_elevation"&ndash;&gt;-->
+<!--&lt;!&ndash;card_view:cardBackgroundColor="#FFF">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;android:paddingBottom="10dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;android:paddingLeft="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:paddingRight="8dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:text="Kadar Alkohol Kendaraan"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;style="@android:style/TextAppearance.Large"/>&ndash;&gt;-->
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/Alkohol"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:text="0"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textSize="150sp"&ndash;&gt;-->
+<!--&lt;!&ndash;/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:text="Percentage %"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textSize="20sp"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;-->
+
+
+<!--</RelativeLayout>-->
+<!--</FrameLayout>-->
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardBackgroundColor="#2196F3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Status Semprot"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:id="@+id/ssemprot"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewFloat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_alignParentRight="true"
+        >
+        <view
+            class="im.dacer.androidcharts.LineView"
+            android:id="@+id/line_view_float"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            />
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardBackgroundColor="#2196F3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Status Makan"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:id="@+id/smakan"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardBackgroundColor="#2196F3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Grafik Kecepatan dan Kadar Alkohol"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:id="@+id/ssempsrot"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line_button"
+        android:layout_alignParentRight="true"
+        >
+        <view
+            class="im.dacer.androidcharts.LineView"
+            android:id="@+id/line_view"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            />
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/line_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Random"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

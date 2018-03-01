@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "336122624100",
+    "firebase_url": "https://scmsfix.firebaseio.com",
+    "project_id": "scmsfix",
+    "storage_bucket": "scmsfix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336122624100:android:19fcc6d191c2cece",
+        "android_client_info": {
+          "package_name": "com.fun_corp.umamappsv10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336122624100-b00lchcna42mbaktbkqu1i8ihv8lnncq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRc7BmYH8iHJH13z-pRJ4F954lGgIC7ik"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
